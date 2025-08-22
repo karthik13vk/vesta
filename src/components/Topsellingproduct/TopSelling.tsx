@@ -73,7 +73,7 @@ const products = [
     image: productimg1,
     rating: 4.8,
     reviews: 85,
-    price: 299,
+    price: 499,
     originalPrice: 349,
   },
   {
