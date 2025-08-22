@@ -16,9 +16,9 @@ import { PiSealCheckFill } from "react-icons/pi";
 import { AiOutlineMinus } from "react-icons/ai";
 import { IoMdAdd } from "react-icons/io";
 import "swiper/css";
-import "swiper/css/free-mode";
+// import "swiper/css/free-mode";
 import "swiper/css/navigation";
-import "swiper/css/thumbs";
+// import "swiper/css/thumbs";
 
 const Product_Details = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);

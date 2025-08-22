@@ -408,6 +408,8 @@ const Navbar = () => {
             </div>
           </div>
         </Drawer>
+        <button onClick={() => toggleDrawer(0, true)}>Open Drawer</button>
+
       </Layout>
     </div>
   );
