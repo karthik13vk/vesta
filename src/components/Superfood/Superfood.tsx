@@ -1,4 +1,4 @@
-import React from "react";
+
 import foodimg from "./../../assets/images/superfood-img.png";
 import orangeimg from "./../../assets/images/orange.png";
 import leaveimg from "./../../assets/images/leave.png";

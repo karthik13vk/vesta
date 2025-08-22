@@ -12,7 +12,6 @@ import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 
 import { FaStar } from "react-icons/fa";
 import { PiSealCheckFill } from "react-icons/pi";
-import { SearchOutlined } from "@ant-design/icons";
 import { AiOutlineMinus } from "react-icons/ai";
 import { IoMdAdd } from "react-icons/io";
 import "swiper/css";

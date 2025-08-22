@@ -1,12 +1,11 @@
-import React from "react";
-import adver1img from "./../../assets/images/adver-1.png";
-import adver2img from "./../../assets/images/adver-2.png";
+import ad1  from "./../../assets/images/adver-1.png";
+import ad2  from "./../../assets/images/adver-2.png";
 
 const advsContent = [
   {
     id: 1,
     type: "imageText",
-    image: adver1img,
+    image: ad1 ,
     content: (
       <>
         In Ayurveda, Moringa (called sigru or shigru) is revered for its{" "}
@@ -23,7 +22,7 @@ const advsContent = [
   {
     id: 2,
     type: "imageText",
-    image: adver2img,
+    image: ad2 ,
     content: (
       <>
         In Ayurveda, Moringa (called sigru or shigru) is revered for its{" "}
@@ -57,10 +56,10 @@ const Ads = () => {
               )}
               {item.type === "textBlock" && (
                 <div>
-                  <h1 className="text-4xl font-bold text-white">
+                  {/* <h1 className="text-4xl font-bold text-white">
                     {item.title}
                   </h1>
-                  <p className="mt-3 text-white text-md">{item.description}</p>
+                  <p className="mt-3 text-white text-md">{item.description}</p> */}
                 </div>
               )}
             </div>

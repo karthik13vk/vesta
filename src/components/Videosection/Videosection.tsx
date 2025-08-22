@@ -1,8 +1,5 @@
-import React from "react";
-import {  A11y, Autoplay } from "swiper/modules";
+import { A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import productimg1 from "./../../assets/images/products/product-img.png";
-import { PiSealCheckFill } from "react-icons/pi";
 import "swiper/css";
 import "swiper/css/navigation";
 // import "swiper/css/pagination";
@@ -69,7 +66,7 @@ const Videosection = () => {
               modules={[A11y, Autoplay]}
               spaceBetween={6}
               slidesPerView={6}
-            //   pagination={{ clickable: true }}
+              //   pagination={{ clickable: true }}
               loop={true}
               breakpoints={{
                 0: { slidesPerView: 2 },
@@ -86,12 +83,10 @@ const Videosection = () => {
                       <iframe
                         width="100%"
                         height="315"
-                        preload="metadata"
-                        webkitplaysinline="true"
                         src={`${product.videoUrl}?autoplay=0`}
                         title={product.videoTitle}
                         frameBorder="0"
-                        allow="autoplay; encrypted-media"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                       ></iframe>
                     </div>

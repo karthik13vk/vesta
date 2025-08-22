@@ -1,7 +1,7 @@
 import React from 'react'
-import Product_Details from "./../Product_details/Product_Details";
+import Product_Details from "../Product_details/Product_Details";
 
-import Benefit from "./../Benefit/Benefit";
+import Benefit from "../Benefit/Benefit";
 import Testimonial from '../Testimonial/Testimonial';
 import Superfood from '../Superfood/Superfood';
 const Productsingle = () => {

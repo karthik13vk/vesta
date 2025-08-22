@@ -7,7 +7,7 @@ import { CgMenuRight } from "react-icons/cg";
 import { Layout, Menu } from "antd";
 import { UserOutlined, SearchOutlined } from "@ant-design/icons";
 import "./Navbar.scss";
-import { Button, ConfigProvider, Drawer, Space } from "antd";
+import { Drawer } from "antd";
 import { createStyles, useTheme } from "antd-style";
 import type {
   DrawerClassNames,
@@ -16,18 +16,14 @@ import type {
 import { AiFillMinusCircle, AiOutlineMinus } from "react-icons/ai";
 import { IoMdAdd } from "react-icons/io";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
+import {  Navigation } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
 // import "swiper/css/pagination";
 
 import "swiper/css/navigation";
 import { Link } from "react-router-dom";
-// import required modules
 
-const { Header, Content } = Layout;
-
-// ✅ Define styles using `createStyles`
 const useStyle = createStyles(({ token }) => ({
   "my-drawer-body": {
     background: token.blue1,
@@ -51,14 +47,12 @@ const Navbar = () => {
   const { styles } = useStyle();
   const token = useTheme();
 
-  // ✅ Drawer toggle function
   const toggleDrawer = (index: number, status: boolean) => {
     const updated = [...open];
     updated[index] = status;
     setOpen(updated);
   };
 
-  // ✅ Custom classNames for Drawer
   const classNames: DrawerClassNames = {
     body: styles["my-drawer-body"],
     mask: styles["my-drawer-mask"],
@@ -114,7 +108,6 @@ const Navbar = () => {
                   <ul className="flex justify-between gap-2 align-middle lg:gap-2 xl:gap-3 menulink">
                     <li className="flex items-center">
                       <Link
-                        href=""
                         to="/"
                         className="text-sm text-text_1 md:text-md xl:text-lg "
                       >
@@ -123,7 +116,6 @@ const Navbar = () => {
                     </li>
                     <li className="flex items-center">
                       <Link
-                        href=""
                         to="/product"
                         className="text-sm text-text_1 md:text-md xl:text-lg "
                       >
@@ -133,7 +125,7 @@ const Navbar = () => {
 
                     <li className="flex items-center">
                       <Link
-                        href=""
+                        
                         to="/productsingle"
                         className="text-sm text-text_1 md:text-md xl:text-lg "
                       >
@@ -142,7 +134,7 @@ const Navbar = () => {
                     </li>
                     <li className="flex items-center">
                       <a
-                        href=""
+                        href="#"
                         className="text-sm text-text_1 md:text-md xl:text-lg "
                       >
                         Nutrition Essential
@@ -230,7 +222,6 @@ const Navbar = () => {
                     <ul className="flex flex-col justify-between gap-4 align-middle menulink">
                       <li className="flex items-center">
                         <Link
-                          href=""
                           to="/"
                           className="text-sm text-text_1 md:text-md xl:text-lg "
                         >
@@ -239,7 +230,6 @@ const Navbar = () => {
                       </li>
                       <li className="flex items-center">
                         <Link
-                          href=""
                           to="/product"
                           className="text-sm text-text_1 md:text-md xl:text-lg "
                         >
@@ -249,7 +239,6 @@ const Navbar = () => {
 
                       <li className="flex items-center">
                         <Link
-                          href=""
                           to="/productsingle"
                           className="text-sm text-text_1 md:text-md xl:text-lg "
                         >
@@ -354,13 +343,13 @@ const Navbar = () => {
                 640: { slidesPerView: 2 },
                 1024: { slidesPerView: 2 },
               }}
-              onBeforeInit={(swiper) => {
-                // Attach custom buttons
-                if (typeof swiper.params.navigation !== "boolean") {
-                  swiper.params.navigation.prevEl = prevRef.current;
-                  swiper.params.navigation.nextEl = nextRef.current;
-                }
-              }}
+              // onBeforeInit={(swiper) => {
+              //   // Attach custom buttons
+              //   // if (typeof swiper.params.navigation !== "boolean") {
+              //   //   swiper.params.navigation.prevEl = prevRef.current;
+              //   //   swiper.params.navigation.nextEl = nextRef.current;
+              //   // }
+              // }}
               navigation={{}} // Required to enable navigation module
               modules={[Navigation]}
               className="sideSwiper"

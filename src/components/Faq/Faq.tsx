@@ -1,5 +1,8 @@
 import React from "react";
-import { Collapse, Divider } from "antd";
+import { Collapse } from "antd";
+import type { CollapseProps } from 'antd';
+
+
 import insta from "../../assets/images/Instagram.png";
 import instapic1 from "../../assets/images/flower-1.jpeg";
 import instapic2 from "../../assets/images/flower-2.jpeg";

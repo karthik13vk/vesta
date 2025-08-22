@@ -1,6 +1,6 @@
-import React from "react";
+
 import benefit from "./../../assets/images/benefit.png";
-import "./Benefit.scss";
+// import "./Benefit.scss";
 
 const Benefit = () => {
   return (

@@ -1,11 +1,11 @@
 import React from 'react'
-import { Banner } from "./../Banner/Banner";
-import Marqueeslider from "./../Marquee/Marquee";
-import TopSelling from "./../Topsellingproduct/TopSelling";
-import Superfood from "./../Superfood/Superfood";
-import Ads from "./../Ads/Ads";
-import Testimonial from "./../Testimonial/Testimonial";
-import Safe_Payment from "./../Safe_Payment/Safe_Payment";
+import { Banner } from "../Banner/Banner";
+import Marqueeslider from "../Marquee/Marquee";
+import TopSelling from "../Topsellingproduct/TopSelling";
+import Superfood from "../Superfood/Superfood";
+import Ads from "../Ads/Ads";
+import Testimonial from "../Testimonial/Testimonial";
+import Safe_Payment from "../Safe_Payment/Safe_Payment";
 
 const Home = () => {
     return (

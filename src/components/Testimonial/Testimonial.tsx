@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./Testimonial.scss"
 import { Pagination, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
