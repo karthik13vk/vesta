@@ -1,7 +1,7 @@
 
 import { Pagination, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "./TopSelling.scss";
+import "./TopSellingnew.scss";
 import { FaStar } from "react-icons/fa";
 // import bannerImg from "./../../assets/images/homebanner.png";
 import productimg1 from "./../../assets/images/products/product-img.png";
