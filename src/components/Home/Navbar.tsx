@@ -1,10 +1,10 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import logo from "./../../assets/images/logo.png";
 import products from "./../../assets/images/products/product-img.png";
 import saving from "./../../assets/images/saving.png";
 import { BsCart4 } from "react-icons/bs";
 import { CgMenuRight } from "react-icons/cg";
-import { Layout, Menu } from "antd";
+import { Layout } from "antd";
 import { UserOutlined, SearchOutlined } from "@ant-design/icons";
 import "./Navbar.scss";
 import { Drawer } from "antd";

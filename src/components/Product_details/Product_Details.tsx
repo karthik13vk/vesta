@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Breadcrumb, Button } from "antd";
 import producticon1 from "./../../assets/images/product-icon1.png";
 import producticon2 from "./../../assets/images/product-icon2.png";
@@ -7,6 +7,7 @@ import producticon4 from "./../../assets/images/product-icon4.png";
 import InnerImageZoom from "react-inner-image-zoom";
 import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
 // import required modules
+import { Swiper as SwiperType } from 'swiper'; 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 
@@ -20,6 +21,7 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 
 const Product_Details = () => {
+  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
   const [count, setCount] = useState(1);
 
   const handleDecrement = () => {
@@ -50,7 +52,7 @@ const Product_Details = () => {
     },
   ];
 
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  // const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   const images = [
     "https://swiperjs.com/demos/images/nature-1.jpg",
@@ -75,45 +77,45 @@ const Product_Details = () => {
         </div>
         <div className="flex flex-col gap-3 lg:flex-row lg:gap-5 productdetails-inner">
           <div className="overflow-hidden productdetails-img flex-1/2">
-            <Swiper
-              style={{
-                "--swiper-navigation-color": "#fff",
-                "--swiper-pagination-color": "#fff",
-              }}
-              spaceBetween={10}
-              navigation={true}
-              thumbs={{ swiper: thumbsSwiper }}
-              modules={[FreeMode, Navigation, Thumbs]}
-              className="mySwiper2"
-            >
-              {images.map((img, index) => (
-                <SwiperSlide key={index}>
-                  <InnerImageZoom
-                    src={img}
-                    zoomSrc={img}
-                    zoomType="hover"
-                    zoomPreload={true}
-                    alt={`Slide ${index + 1}`}
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
+<Swiper
+  style={{
+    "--swiper-navigation-color": "#fff",
+    "--swiper-pagination-color": "#fff",
+  } as React.CSSProperties}
+  spaceBetween={10}
+  navigation={true}
+  thumbs={{ swiper: thumbsSwiper }}
+  modules={[FreeMode, Navigation, Thumbs]}
+  className="mySwiper2"
+>
+  {images.map((img, index) => (
+    <SwiperSlide key={index}>
+      <InnerImageZoom
+        src={img}
+        zoomSrc={img}
+        zoomType="hover"
+        zoomPreload={true}
+        alt={`Slide ${index + 1}`}
+      />
+    </SwiperSlide>
+  ))}
+</Swiper>
 
-            {/* Thumbnails Swiper */}
-            <Swiper onSwiper={setThumbsSwiper}
-              spaceBetween={10}
-              slidesPerView={4}
-              freeMode={true}
-              watchSlidesProgress={true}
-              modules={[FreeMode, Navigation, Thumbs]}
-              className="mySwiper"
-            >
-              {images.map((img, index) => (
-                <SwiperSlide key={index}>
-                  <img src={img} alt={`Thumbnail ${index + 1}`} />
-                </SwiperSlide>
-              ))}
-            </Swiper>
+<Swiper
+  onSwiper={setThumbsSwiper}
+  spaceBetween={10}
+  slidesPerView={4}
+  freeMode={true}
+  watchSlidesProgress={true}
+  modules={[FreeMode, Navigation, Thumbs]}
+  className="mySwiper"
+>
+  {images.map((img, index) => (
+    <SwiperSlide key={index}>
+      <img src={img} alt={`Thumbnail ${index + 1}`} />
+    </SwiperSlide>
+  ))}
+</Swiper>
           </div>
           <div className="productinfo flex-1/2">
             <div className="flex flex-col gap-1">

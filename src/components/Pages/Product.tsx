@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Banner } from '../Banner/Banner';
 import SellingProduct from "../SellingProduct/SellingProduct";
 import Superfood from "../Superfood/Superfood";
