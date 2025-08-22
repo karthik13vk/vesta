@@ -1,0 +1,16 @@
+.testimonial-section {
+  .testimonial-right {
+    .swiper-wrapper {
+      margin-bottom: 35px;
+    }
+    .swiper-pagination.swiper-pagination-horizontal {
+      bottom: -0 !important;
+    }
+    .swiper-pagination-bullet-active {
+      background: #1a5d1a;
+    }
+    .swiper-pagination-bullet {
+      background: #226b1e;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.faq-section {
+  .faq-inner {
+    .ant-collapse {
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      .ant-collapse-item {
+        margin-bottom: 10px;
+        border-radius: 0;
+        border: 0;
+        .ant-collapse-header {
+          background: #fff !important;
+          background-color: #fff !important;
+          align-items: center;
+          flex-direction: row-reverse;
+        }
+        .ant-collapse-header-text {
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+      .ant-collapse-content {
+        border: none;
+      }
+    }
+    .insta-img {
+      width: min(1000px, 100%);
+      margin: auto;
+      // columns: 3;
+      column-gap: 1em;
+      img {
+        display: block;
+        margin-bottom: 1em;
+        width: 100%;
+      }
+    }
+  }
+}

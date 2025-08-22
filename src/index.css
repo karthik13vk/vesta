@@ -1,0 +1,68 @@
+@import "./assets/fonts/Mier/stylesheet.css";
+@import "tailwindcss" important;
+
+@theme {
+  --color-primary: #2c7d2c;
+  --color-bg_1: #2a4d2a;
+  --color-bg_2: #fcf5eb;
+  --color-bg_3: #c6e4c6;
+  --color-bg_4: #e3f84a;
+  --color-bg_5: #0a3a09;
+  --color-bg_6: #FAFFD8;
+  --color-bg_7: #F1F6C7;
+  --color-bg_8: #E5EFE5;
+  --color-bg_9: #D8D8D8;
+  --color-bg_10: #DFFAD6;
+  --color-bg_11: #E2E0E0;
+  --color-text_1: #1f3d3c;
+  --color-text_2: #1a5d1a;
+  --color-text_3: #626262;
+  --color-text_4: #c0d71d;
+  --color-text_5: #E3FFE3;
+  --color-text_6: #344134;
+  --color-text_7: #DFDFDF;
+  --color-text_8: #7F7E7E;
+  --color-text_9: #1F1C1C;
+  --color-text_10: #D9D9D9;
+  --color-text_11: #686868;
+  --color-inputcolor: #EFEFEF;
+  --font-*:initial;
+  --font-primary: "Mier B";
+  --font-secondary: "Rage";
+
+}
+:root {
+   --font-primary: "Mier B";
+  line-height: 1.5;
+  color-scheme: light dark;
+  color: #000;
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-primary);
+  }
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+   font-family: var(--font-primary);
+   background:var( --color-bg_2) ;
+}
+
+h1 {
+}
+ .swiper-pagination-bullet {
+    background: #226b1e!important;
+}
+.homebanner-section .swiper-pagination-bullet {
+    background: #e3f84a !important;
+}
